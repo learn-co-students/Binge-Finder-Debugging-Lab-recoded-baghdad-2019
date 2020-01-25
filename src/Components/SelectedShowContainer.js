@@ -9,7 +9,8 @@ class SelectedShowContainer extends Component {
 
   mapSeasons = () => {
     if (!!this.props.episodes){
-      let seasons = this.props.episodes.map((e)=> e.season).unique()
+      
+      let seasons = this.props.episodes.map((e) => e.season).unique()
 
       return seasons.map((s) => {
         return (<option value={s} key={s}>Season {s}</option>)
